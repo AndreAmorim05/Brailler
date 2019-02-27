@@ -1,0 +1,22 @@
+<Manager>:
+    Tela:
+
+
+<Tela>:
+    FloatLayout:
+#        canvas.before:
+#            Color:
+#                rgba: 1,1,1,1
+#            Rectangle:
+#                pos: self.pos
+#                size: self.size
+#                texture: root.Tex
+        Image:
+            id: pic
+            pos: root.pos
+            size: root.size
+            source: 'data//image.jpg'
+        Button:
+            size_hint: .13,.13
+            text: 'Aperte'
+            on_press: root.tipo()
